@@ -1,25 +1,35 @@
 require "open-uri"
 require "nokogiri"
 
+arivals = Nokogiri::HTML(open("https://www.cph.dk/flyinformation/ankomster/"))
 
-
-def  destination()
-	doc = Nokogiri::HTML(open("https://www.cph.dk/flyinformation/afgange/"))
-	doc.search('.flights__table .stylish-table__row--body .stylish-table__cell span strong')
+new_array= arivals.search('.flights__table__col--destination span').each_with_index do |element, index|
+	puts "#{index + 2}. #{element.text.strip}"
 end
-puts destination
 
+arivals.search('.flights__table__col--destination')[1].text.strip.match(/[^\t\r\n]*/).each_with_index do |element, index|
+	puts "#{index + 2}. #{element.text.strip}"
+end
+
+
+# doc = Nokogiri::HTML(open("https://www.cph.dk/flyinformation/ankomster/"))
+# nodeset = doc.search('.flights__table__col--destination span')
+
+
+# nodeset.map.with_index{ |x, i| x * i }
+# puts nodeset.size
+
+# puts nodeset[0]
+
+# puts nodeset[1..20].text.uniq
+
+# puts [1,2,3].each {|index| puts nodeset[index].text.strip }
+# def nodeset_toarray ()
+
+# return nodeset_toarray
+# end
 
 # WITH SCAPPING ADVICE
-puts "Welcome to the Christmas List"
+puts "You can do it MARCI!"
 
-# ingredient = 'chocolate'
-# url = "http://www.letscookfrench.com/recipes/find-recipe.aspx?s=#{ingredient}"
-
-# html_file = open(url).read
-# html_doc = Nokogiri::HTML(html_file)
-
-# html_doc.search('.m_titre_resultat a').each do |element|
-#   puts element.text.strip
-#   puts element.attribute('href').value
-# end
+Nokogiri::HTML(open(url).read).search('.flights__table__col--destination')[1].text.strip.match(/[^\t\r\n]*/)

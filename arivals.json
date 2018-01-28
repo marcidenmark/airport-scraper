@@ -1,0 +1,57 @@
+[
+  {
+    "Destination": "New York City",
+    "arivalTime": 10.33,
+    "departureTime": 23.44,
+    "flightNumber": 104,
+  },
+  {
+    "Destination": "Copenhagen",
+    "arivalTime": 10.33,
+    "departureTime": 23.44,
+    "flightNumber": 106,
+  },
+  {
+    "Destination": "Singapore",
+    "arivalTime": 10.33,
+    "departureTime": 23.44,
+    "flightNumber": 108,
+  },
+  {
+    "Destination": "Copenhagen",
+    "arivalTime": 10.33,
+    "departureTime": 23.44,
+    "flightNumber": 109,
+  },
+  {
+    "Destination": "Berlin",
+    "arivalTime": 10.33,
+    "departureTime": 23.44,
+    "flightNumber": 103,
+  },
+  {
+    "Destination": "Bali",
+    "arivalTime": 10.33,
+    "departureTime": 23.44,
+    "flightNumber": 105,
+  },
+  {
+    "Destination": "Paris",
+    "arivalTime": 10.33,
+    "departureTime": 23.44,
+    "flightNumber": 107,
+  },
+  {
+    "Destination": "Seatle",
+    "arivalTime": 10.33,
+    "departureTime": 23.44,
+    "flightNumber": 111,
+  },
+  {
+    "Destination": "Rome",
+    "aravalTime": 10.33,
+    "departureTime": 23.44,
+    "flightNumber": 121,
+  }
+]
+
